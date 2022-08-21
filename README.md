@@ -17,7 +17,7 @@ Users should be able to:
 
 Solution screenshot
 
-![](https://github.com/IvanKoshan2004/frontendmentor-interactive-rating-component-main/tree/main/screenshots/screenshot.png)
+![](/screenshots/screenshot.png)
 
 ### Links
 
