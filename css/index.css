@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root {
+    --dark-blue: hsl(213, 19%, 18%);
+    --darker-blue: #202731;
+    --very-dark-blue: hsl(216, 12%, 8%);
+    --light-grey: hsl(217, 12%, 63%);
+    --medium-grey: hsl(216, 12%, 54%);
+    --dark-grey: #262F38;
+    --orange: hsl(25, 97%, 53%);
+    --white: hsl(0, 0%, 100%);
+    font-family: "Overpass", sans-serif;
+    font-size: 15px;
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+    color: hsl(227, 20%, 86%);
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+/*Styling*/
+
+.wrapper {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    /* background-color: #141519; */
+    background-color: var(--very-dark-blue);
+}
+.component{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 350px;
+    background-color: var(--darker-blue);    
+    border-radius: 20px;
+    display:none;
+    padding: 1.8em;
+}
+.active {
+    display: block;
+}
+
+.component-title {
+    color: var(--white);
+    font-weight: 700;
+    margin-top: 1em;
+}
+.component-paragraph {
+    color: var(--light-grey);
+    margin-top: 1em; 
+}
+
+/*Rating block*/
+
+.rating-blobs-container {
+    display:flex;
+    width: min(100%, 350px);
+    margin:2em auto;
+    justify-content: space-between;
+}
+.rating-blob {
+    position: relative;
+    width: 3em;
+    height: 3em;
+    border-radius: 50%;
+    color: var(--medium-grey);
+    background-color: var(--dark-grey);
+}
+.rating-blob_content {
+    position: absolute; 
+    display: block;   
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.rating-blob__star {
+    margin-top: 6px;
+}
+.submit-button {
+    background-color: var(--orange);
+    border: none;
+    border-radius: 22.5px;
+    color: var(--white);
+    font-weight: 700;
+
+    letter-spacing: 2px;
+    padding: 1.2em;
+    width: 100%;
+}
+
+/*Thank You block*/
+
+.image-container {
+    width: max-content;
+    margin: 1em auto;
+}
+
+.rate-choice-container {
+    background-color: var(--dark-grey);
+    border-radius: 20.5px;
+    color: var(--orange);
+    padding: 0.7em 0.7em 0.5em 0.7em;
+    margin: 0 auto;
+    width: max-content;
+}
+.thank-you-component__title, .thank-you-component__paragraph {
+    text-align: center;
+}
