@@ -76,7 +76,17 @@
     border-radius: 50%;
     color: var(--medium-grey);
     background-color: var(--dark-grey);
+    transition: all 0.2s;
 }
+.rating-blobs-container .rating-blob:hover {
+    color: var(--white);
+    background-color: var(--orange);
+}
+.rating-blobs-container .active {
+    background-color: var(--light-grey);
+    color: var(--white);
+}
+
 .rating-blob_content {
     position: absolute; 
     display: block;   
@@ -97,8 +107,12 @@
     letter-spacing: 2px;
     padding: 1.2em;
     width: 100%;
+    transition: all 0.2s;
 }
-
+.submit-button:hover {
+    color: var(--orange);
+    background-color: var(--white);
+}
 /*Thank You block*/
 
 .image-container {
